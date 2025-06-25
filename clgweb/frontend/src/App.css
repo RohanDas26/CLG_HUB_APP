@@ -1,0 +1,63 @@
+/* This defines global variables for our modern UI theme. */
+/* We can easily change the entire app's look by editing these. */
+:root {
+  --font-family-sans: "Inter", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  --background-primary: #f7f7f8;
+  --background-secondary: #ffffff;
+  --text-primary: #171717;
+  --text-secondary: #6b6b6b;
+  --border-color: #e5e5e5;
+  --brand-color: #1E90FF;
+  --brand-color-hover: #0073e6;
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --border-radius: 8px; /* A more modern, rounded look */
+}
+
+/* Apply a modern font. You can add a Google Font import here if you want. */
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap'); */
+
+body {
+  margin: 0;
+  font-family: var(--font-family-sans);
+  background-color: var(--background-primary);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden; /* Prevent body scrollbars */
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 2rem 3rem; /* More spacious padding */
+  overflow-y: auto; /* Allow this area to scroll if content overflows */
+}
+
+.welcome-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+.welcome-view h1 {
+  color: var(--text-primary);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.welcome-view p {
+  max-width: 450px;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}

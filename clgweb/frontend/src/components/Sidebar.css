@@ -1,0 +1,90 @@
+.sidebar {
+  width: 260px;
+  flex-shrink: 0;
+  background-color: var(--background-secondary);
+  border-right: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1rem; /* Adjust padding */
+}
+
+.sidebar-header {
+  padding: 0 0.5rem 1.5rem 0.5rem; /* Adjust padding */
+  margin-bottom: 1rem;
+}
+
+.sidebar-header h2 {
+  text-align: center;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--brand-color);
+}
+
+.sidebar-section h3 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 0 0.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Base button style for all sidebar buttons */
+.sidebar-button {
+  display: flex; /* Use flex for alignment */
+  align-items: center;
+  gap: 10px; /* Space between icon and text */
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 6px;
+  border: none;
+  border-radius: var(--border-radius);
+  text-align: left;
+  font-size: 0.95rem;
+  font-weight: 500; /* Medium weight for modern look */
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  background-color: transparent;
+  color: var(--text-primary);
+}
+
+/* Style for the external link buttons */
+.link-button {
+  background-color: var(--brand-color);
+  color: white;
+}
+
+.link-button:hover {
+  background-color: var(--brand-color-hover);
+}
+
+/* Style for the folder/subject buttons */
+.folder-button:hover {
+  background-color: var(--background-primary);
+}
+
+.folder-button.selected {
+  background-color: var(--brand-color);
+  color: white;
+  font-weight: 600;
+}
+
+/* Other styles remain the same */
+.folder-list {
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.loading-text, .error-text {
+  color: var(--text-secondary);
+  padding: 10px 15px;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.error-text {
+  color: #d9534f;
+}
